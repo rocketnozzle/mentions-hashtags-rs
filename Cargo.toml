@@ -1,0 +1,27 @@
+[package]
+name = "mentions-hashtags"
+version = "0.1.0"
+edition = "2021"
+description = "Extracts @mentions and #hashtags from text (like social media descriptions). Built in safe, fast, idiomatic Rust using regex."
+readme = "README.md"
+homepage = "https://github.com/rocketnozzle/mentions-hashtags-rs"
+repository = "https://github.com/rocketnozzle/mentions-hashtags-rs"
+license = "MIT"
+keywords = ["hashtags", "mentions", "parser", "social", "regex"]
+categories = ["text-processing", "parsing"]
+authors = ["rocketnozzle.io"]
+
+exclude = [
+    "tests/*",
+    "examples/*",
+    "benches/*",
+    ".github/*",
+    "*.rs.bak",
+    "test_data/*",
+    "code_coverage/*"
+]
+
+[dependencies]
+regex = "1.11.1"
+
+[dev-dependencies]
